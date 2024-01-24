@@ -43,6 +43,11 @@ export default class Artwork {
     this.loop()
   }
 
+  //this function returns a list of vertices that are in the light.
+  //The structure is a list of all the meshes in the scene, and for each mesh, a list with a 0 or 1 for each vertex in the mesh
+  //0 means the vertex is not in the light, 1 means it is
+  calculateVerticesInLight() {}
+
   createControls() {
     this.params = {
       depthmapViewer: common.isMobile ? false : true,
@@ -230,7 +235,7 @@ export default class Artwork {
   update() {
     common.update()
 
-    this.updateLight()
+    // this.updateLight()
 
     for (let i = 0; i < this.meshProps.length; i++) {
       const meshProps = this.meshProps[i]
