@@ -19,6 +19,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "@types/three": "^0.160.0",
     "animejs": "^3.2.1",
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.8.1",
@@ -36,7 +37,7 @@
     "stats-js": "^1.0.1",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^2.3.0",
-    "three": "^0.136.0",
+    "three": "latest",
     "uglify-js": "^3.7.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack-bundle-analyzer": "^4.3.0"
