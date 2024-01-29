@@ -190,6 +190,9 @@ export default class Artwork {
         value: this.intensity_0
       }
     }
+
+    
+
     const material = new THREE.ShaderMaterial({
       vertexShader,
       fragmentShader,
@@ -202,6 +205,8 @@ export default class Artwork {
       uniforms
       // side: THREE.BackSide
     })
+
+
 
     return { material, shadowMaterial }
   }
