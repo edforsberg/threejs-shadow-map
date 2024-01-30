@@ -1,22 +1,17 @@
-import Artwork from "./modules/Artwork";
+import Artwork from './modules/Artwork.ts'
 
+const $wrapper = document.getElementById('webgl-container')
 
-const $wrapper = document.getElementById("webgl-container");
-
-$wrapper.style.position = "fixed";
-$wrapper.style.top = 0;
-$wrapper.style.left = 0;
-$wrapper.style.right = 0;
-$wrapper.style.bottom = 0;
-
+$wrapper.style.position = 'fixed'
+$wrapper.style.top = 0
+$wrapper.style.left = 0
+$wrapper.style.right = 0
+$wrapper.style.bottom = 0
 
 const artwork = new Artwork({
-    $wrapper: $wrapper
-});
+  $wrapper: $wrapper
+})
 
-window.addEventListener("resize", () => {
-    artwork.resize();
-});
-
-
-
+window.addEventListener('resize', () => {
+  artwork.resize()
+})
